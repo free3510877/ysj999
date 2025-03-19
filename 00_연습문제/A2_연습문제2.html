@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>연습문제 2</title>
+</head>
+
+<body>
+    <form method="get">
+        <fieldset>
+            <legend>납품자 정보</legend>
+            <ol>
+                <li>
+                    <label for="sName">납품자명 : </label>
+                    <input type="text" name="sName" id="sName">
+                </li><br>
+                <li>
+                    <label for="email">이메일 : </label>
+                    <input type="email" name="email" id="email">
+                </li><br>
+                <li>
+                    <label for="page">홈페이지 : </label>
+                    <input type="url" name="url" id="url" value="http://">
+                </li><br>
+                <li>
+                    <label for="region">지역 : </label>
+                    <select name="region" id="region">
+                        <option value="seoul">서울</option>
+                        <option value="inchun">경기.인천</option>
+                        <option value="daejeon">대전.충청</option>
+                        <option value="daegu">대구.경북</option>
+                        <option value="busan">부산.경남</option>
+                    </select>
+                </li><br>
+            </ol>
+        </fieldset>
+
+        <br><br>
+        
+        <fieldset>
+            <legend>남품 정보</legend>
+            <ul>
+                <li>
+                    <label for="pName">상품명 : </label>
+                    <input type="text" name="pName" id="pName">
+                </li>
+                <li>
+                    <label for="amount">납품수량 : </label>
+                    <input type="number" name="amount" id="amount">
+                </li>
+                <li>
+                    <label for="level">납품등급 : </label>
+                    <input type="range" name="level" id="level">
+                </li>
+                <li>
+                    <label for="issue">기타사항 : </label>
+                    <textrea type="issue" name="issue" rows="5" cols="20"></textrea>
+                </li>
+            </ul>
+        </fieldset>
+    </form>
+</body>
+</html>
